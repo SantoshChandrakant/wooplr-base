@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="ReadFromCSV" parallel="tests" thread-count="1">
+
+	<!-- <listeners>
+		<listener class-name="com.spire.base.reporter.SpireReport" />
+		<listener class-name="com.spire.base.controller.TestRetryListener" />
+		<listener class-name="com.spire.base.reporter.SpireEmailReport" />
+	</listeners> -->
+
+	<parameter name="healthCheck" value="false" />
+
+	<test name="ReadFromCSV Testscripts - Sanity">
+		<groups>
+			<run>
+				<include name="readFromCSV" />
+				
+			</run>
+		</groups>
+
+		<packages>
+			<package name="com.san.readcsv" />
+		</packages>
+	</test>   
+
+</suite>               
+           
+   
